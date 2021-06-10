@@ -243,8 +243,7 @@
 <figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vala"><span class="hljs-meta">#生成 ssh key</span><br>ssh-****** -t rsa -C <span class="hljs-string">&quot;邮件地址&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
-<img src="/img/hello-world/SSH.jpg" srcset="/img/loading.gif" lazyload>
-
+<p><img src="/img/SSH.jpg" srcset="/img/loading.gif" lazyload></p>
 <h4 id="测试是否成功："><a href="#测试是否成功：" class="headerlink" title="测试是否成功："></a>测试是否成功：</h4><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>ssh -T git<span class="hljs-variable">@github</span>.com  <span class="hljs-comment"># 注意邮箱地址不用改</span><br></code></pre></td></tr></table></figure>
 
 <p>如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：</p>
@@ -259,8 +258,7 @@
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">hexo <span class="hljs-keyword">init</span> blog<br></code></pre></td></tr></table></figure>
 
 <p>初始化完成以后，在hexo文件夹中会生成一个blog文件夹实例</p>
-<img src="/img/hello-world-hexo-blog.jpg" srcset="/img/loading.gif" lazyload>
-
+<p><img src="/img/hello-world-hexo-blog.jpg" srcset="/img/loading.gif" lazyload></p>
 <p>随后使用cmd指令路径，进入blog文件夹执行下列代码：</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">$ hexo g    <span class="hljs-regexp">//</span>生成静态网页<br>$ hexo s    <span class="hljs-regexp">//</span>执行完以后，你就可以去打开 http:<span class="hljs-regexp">//</span>localhost:<span class="hljs-number">4000</span>/  看本地版的博客效果了<br></code></pre></td></tr></table></figure>
 
