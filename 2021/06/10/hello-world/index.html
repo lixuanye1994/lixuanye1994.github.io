@@ -243,7 +243,7 @@
 <figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vala"><span class="hljs-meta">#生成 ssh key</span><br>ssh-****** -t rsa -C <span class="hljs-string">&quot;邮件地址&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
-<p><img src="/img/SSH.jpg" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/hello-world-SSH.jpg" srcset="/img/loading.gif" lazyload></p>
 <h4 id="测试是否成功："><a href="#测试是否成功：" class="headerlink" title="测试是否成功："></a>测试是否成功：</h4><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>ssh -T git<span class="hljs-variable">@github</span>.com  <span class="hljs-comment"># 注意邮箱地址不用改</span><br></code></pre></td></tr></table></figure>
 
 <p>如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：</p>
