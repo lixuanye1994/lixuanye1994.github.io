@@ -68,7 +68,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Lee Github Blog</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>Lee Blog</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      75 字
+      509 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      6
        分钟
     </span>
   
@@ -229,9 +229,28 @@
             
             <div class="markdown-body">
               <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>​        由于个人懒癌晚期，导致这套个人博客系统到了2021年才问世！我决定了无数次开始研究博客，却又在无数次的三分钟热度中消亡。😂😂😂</p>
+<p>​        终于决定不再偷懒，赶紧补齐教程，来一篇真正的Hello World。</p>
+</blockquote>
+<p>​        </p>
+<h2 id="在-GitHub-上部署-hexo-博客系统步骤"><a href="#在-GitHub-上部署-hexo-博客系统步骤" class="headerlink" title="在 GitHub  上部署 hexo 博客系统步骤"></a>在 GitHub  上部署 hexo 博客系统步骤</h2><h3 id="软件支持"><a href="#软件支持" class="headerlink" title="软件支持"></a>软件支持</h3><ul>
+<li><p><strong>1.安装 node.js</strong><br>下载地址 <a target="_blank" rel="noopener" href="https://nodejs.org/en/">node.js</a><br>直接双击下载下来的msi文件，一路下一步就ok了，安装完之后调出命令行或者node命令输入终端，输入node -v看到版本信息就表明安装成功了。如果不会就参考<a target="_blank" rel="noopener" href="http://www.runoob.com/nodejs/nodejs-install-setup.html">node.js</a>安装</p>
+</li>
+<li><p><strong>2.安装 git</strong><br>下载地址 <a target="_blank" rel="noopener" href="https://git-scm.com/">git下载</a><br>直接双击下载下来的git安装程序，同node安装，安装完之后右键发现多了两个Git GUI Here 、Git Bash Here，点击后者，然后输入git –version出现版本信息就表明安装成功了。</p>
+</li>
+<li><p><strong>3.注册 github账号</strong><br>github 官网 [githubMore info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+</li>
+</ul>
+<h3 id="git-连接github配置："><a href="#git-连接github配置：" class="headerlink" title="git 连接github配置："></a>git 连接github配置：</h3><h4 id="配置SSH-key："><a href="#配置SSH-key：" class="headerlink" title="配置SSH key："></a>配置SSH key：</h4><p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli"><span class="hljs-comment">#检查本机已存在的ssh**</span><br>$ <span class="hljs-keyword">cd</span> ~<span class="hljs-string">/.</span> ssh <br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vala"><span class="hljs-meta">#生成 ssh key</span><br>ssh-****** -t rsa -C <span class="hljs-string">&quot;邮件地址&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-type">![](/img/SSH.jpg)</span><br></code></pre></td></tr></table></figure>
+
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
@@ -261,9 +280,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/06/10/Nanopi-neo2-%E5%BC%83%E5%9D%91%E6%8C%87%E5%8D%97/">
+                      <a href="/2021/06/10/Nanopi-Neo2-%E5%85%A5%E5%9D%91%E6%8C%87%E5%8D%97/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Nanopi neo2 弃坑指南</span>
+                        <span class="hidden-mobile">Nanopi Neo2 入坑指南</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -283,6 +302,23 @@
                   
                 
                 
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"WEeRVY06m8ibj9tNHlO5N6Il-gzGzoHsz","appKey":"mpWAgEGTWkyNUbpF8neoqxj1","placeholder":"好话传得慢，坏话传千里","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false,"requiredFields":[]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
 
               </article>
             

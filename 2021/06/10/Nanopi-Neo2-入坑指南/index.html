@@ -18,7 +18,7 @@
   <meta name="author" content="leexy">
   <meta name="keywords" content="">
   
-  <title>Nanopi neo2 弃坑指南 - Lee Blog</title>
+  <title>Nanopi Neo2 入坑指南 - Lee Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -68,7 +68,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Lee Github Blog</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>Lee Blog</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -163,7 +163,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Nanopi neo2 弃坑指南">
+            <span class="h2" id="subtitle" title="Nanopi Neo2 入坑指南">
               
             </span>
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-06-10 09:19" pubdate>
-        2021年6月10日 上午
+      <time datetime="2021-06-10 22:42" pubdate>
+        2021年6月10日 晚上
       </time>
     </span>
   
@@ -225,7 +225,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Nanopi neo2 弃坑指南</h1>
+            <h1 style="display: none">Nanopi Neo2 入坑指南</h1>
             
             <div class="markdown-body">
               <h3 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h3><p>​        偶然间在B站看到了一位大佬<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19E411a7Sf">稚晖君</a>的“野生极客工程师” room tour 视频，很是激动和羡慕啊，又注意到超迷你的开发板设备 Nanopi ，这比树莓派等小巧太多了，可装linux系统，那就意味着，可以拥有一台属于自己的Web服务器、FTP服务器、游戏服务器、NAS服务器。。。等等一系列骚操作，小巧省电，性能够用！ 那还不着手搞事情</p>
@@ -263,7 +263,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs linux">$ wget http://wiki.friendlyarm.com/utils/aptsouce.sh<br>$ chmod 755 aptsouce.sh<br>$ sudo -H ./aptsouce.sh<br>$ sudo apt-get update<br><br></code></pre></td></tr></table></figure></li>
 <li><p>安装OLED驱动</p>
 <p>购买的Nanopi 和稚晖君 一直，只是外壳是银色金属，配屏幕128*90像素，后期考虑完成 blackapple</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs awk">    $ git clone https:<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/friendlyarm/</span>NanoHatOLED.git<br>    $ cd NanoHatOLED<br>$ sudo -H ./intall.sh<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> git <span class="hljs-built_in">clone</span> https://github.com/friendlyarm/NanoHatOLED.git</span><br><span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">cd</span> NanoHatOLED</span><br><span class="hljs-meta">$</span><span class="bash"> sudo -H ./intall.sh</span><br></code></pre></td></tr></table></figure>
 
 <p>重启完成</p>
 </li>
@@ -355,6 +355,13 @@
               <div class="post-metas mb-3">
                 
                 
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/nanopi/">nanopi</a>
+                    
+                  </div>
+                
               </div>
               
                 <p class="note note-warning">
@@ -390,6 +397,23 @@
                   
                 
                 
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"WEeRVY06m8ibj9tNHlO5N6Il-gzGzoHsz","appKey":"mpWAgEGTWkyNUbpF8neoqxj1","placeholder":"好话传得慢，坏话传千里","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false,"requiredFields":[]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
 
               </article>
             
