@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>网络工程师认证HCIA</title>
+    <link href="/2021/06/17/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E8%AE%A4%E8%AF%81HCIA/"/>
+    <url>/2021/06/17/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E8%AE%A4%E8%AF%81HCIA/</url>
+    
+    <content type="html"><![CDATA[<p>## HCIA-Routing &amp; Switching V2.5 考试大纲</p><p><img src="img/huawei-road.jpg"></p><p>## 考试概述              </p><p><img src="img/huawei-testlist.png"></p><p>​            </p><p><strong>考试范围</strong></p><p>* HCIA-Routing  &amp;  Switching 考试覆盖路由交换(数通)基础知识：</p><p>* TCP/IP 协议栈基础知识， </p><p>* PPP 等广域网协议基本原理以及在华为路由器中的实现，</p><p>* 以太网技术、STP、VLAN 原理以及在华为交换机中的实现，</p><p>* OSPF 路由协议基本原理以及在华为路由器中的实现，</p><p>* 网络安全技术以及华为路由交换设备中的实现，</p><p>* SNMP 等网络管理的基本原理，</p><p>* IPv6 的基础知识以及 OSPFv3、DHCPv6 协议基本原理和实现，</p><p>* MPLS、SR 基本原理。</p><p><img src="img/huawei-testlist2.png"></p><hr><p>1.. IP 网络基础</p><p>1.1 路由交换（数通）基础知识</p><p>1.2 网络基本概念、IP 网络构架、标准化组织与协议</p><p>1.3 OSI、TCP/IP 协议模型结构、各个层次的功能以及报文封装</p><p>1.4 IPv4 子网划分</p><p>1.5 ARP 原理</p><p>1.6TCP/UDP 原理</p><p>1.7 数据转发过程</p><p>1.8 常用应用层协议 FTP、DHCP 的工作原理</p><p>1.9 Ping，Tracert，Telnet 等常用工具原理与应用</p><hr><p>2..局域网技术</p><p>2.1 以太网技术、交换机基本原理</p><p>2.2 STP、RSTP、VLAN 基本原理以及在 VRP  中的实现</p><p>2.3 如何使用 STP、RSTP、VLAN 等技术以及如何使用华为交换机构建小型交换网络</p><hr><p>3..广域网技术</p><p>3.1 HDLC、PPP 等在 VRP 中的实现</p><hr><p>4..路由技术</p><p>4.1 静态路由协议原理、OSPF 协议基本原理以及在VRP 中的实现</p><p>4.2 如何使用静态、OSPF 等技术以及如何使用华为路由器构建小型路由网络</p><hr><p>5..网络安全</p><p>5.1 AAA 工作原理</p><p>5.2 ACL 原理以及在华为路由设备中的配置</p><p>5.3 IPSec  VPN、GRE 工作原理以及在华为路由设备中的配置</p><p>5.4 如何利用网络安全技术保证网络安全性</p><hr><p>6..产品知识</p><p>6.1 VRP 特点、VRP 基本操作与维护</p><p>6.2 华为路由器、交换机产品特点以及在 IP 网络中的应用</p><hr><p>7..网络管理</p><p>7.1 SNMP 原理与配置</p><p>7.2 eSight 基础知识以及简单应用</p><hr><p>8.. IPv6 技术</p><p>8.1 IPv6 基础</p><p>8.2 OSPFv3 协议原理以及在华为路由设备中的配置</p><p>8.3 DHCPv6 协议原理以及在 IP 网络中的应用</p><p>\9. .MPLS 和 Segment  Routing 基础</p><p>9.1 MPLS 基本原理</p><p>9.2 Segment  Routing 基本原理<strong>请注意：</strong></p><p>本文提到的考试内容仅仅为考生提供一个通用的考试指引，本文未提到的其他相关内容在考试中也有可能出现。</p><p>参考书籍</p><p>华为认证HCIA- Routing &amp; Switching V2.5 课程华为产品文档</p><p>推荐培训</p><p>HCIA- Routing &amp; Switching V2.5 培训</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>网络工程师</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>华为HCIA</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>HTML 5 基础知识点</title>
     <link href="/2021/06/17/HTML-5-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     <url>/2021/06/17/HTML-5-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
