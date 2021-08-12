@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>自学python整理</title>
+    <link href="/2021/08/12/%E8%87%AA%E5%AD%A6python%E6%95%B4%E7%90%86/"/>
+    <url>/2021/08/12/%E8%87%AA%E5%AD%A6python%E6%95%B4%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Python-自学笔记"><a href="#Python-自学笔记" class="headerlink" title="Python 自学笔记"></a>Python 自学笔记</h1><blockquote><p>前言：Python之禅 <strong>import this</strong></p><p>The Zen of Python, by Tim Peters</p><p>Beautiful is better than ugly.<br>Explicit is better than implicit.<br>Simple is better than complex.<br>Complex is better than complicated.<br>Flat is better than nested.<br>Sparse is better than dense.<br>Readability counts.<br>Special cases aren’t special enough to break the rules.<br>Although practicality beats purity.<br>Errors should never pass silently.<br>Unless explicitly silenced.<br>In the face of ambiguity, refuse the temptation to guess.<br>There should be one– and preferably only one –obvious way to do it.<br>Although that way may not be obvious at first unless you’re Dutch.<br>Now is better than never.<br>Although never is often better than <em>right</em> now.<br>If the implementation is hard to explain, it’s a bad idea.<br>If the implementation is easy to explain, it may be a good idea.<br>Namespaces are one honking great idea – let’s do more of those!</p></blockquote><h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量:"></a>变量:</h3><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">1</span>.变量不能以数字开头命名，test_<span class="hljs-number">1</span> 可以，<span class="hljs-number">1</span>_test不可以<br><span class="hljs-attribute">2</span>.变量不能包含空格，分隔命名单词最好用下划线,test_first<br><span class="hljs-attribute">3</span>.变量不能使用关键字和函数名<br><span class="hljs-attribute">4</span>.最好使用小写字母命名变量<br><span class="hljs-attribute">5</span>.同时给多个变量赋值 x,y,z = <span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span><br><span class="hljs-attribute">6</span>.常量用大写<br></code></pre></td></tr></table></figure><h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串:"></a>字符串:</h3><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs gcode"><span class="hljs-number">1.</span>字符串首字母大写方法：xxx.title<span class="hljs-comment">()</span><br><span class="hljs-number">2.</span>字符串全部大写方法：xxx.upper<span class="hljs-comment">()</span><br><span class="hljs-number">3.</span>字符串全部小写方法：xxx.lower<span class="hljs-comment">()</span><br><span class="hljs-number">4.</span>在字符串中使用变量“f字符串”：test = f<span class="hljs-string">&quot;&#123;one&#125;&#123;two&#125;&quot;</span><br><span class="hljs-number">5.</span>字符串末尾删除空白方法：xxx.rstrip<span class="hljs-comment">()</span><br><span class="hljs-number">6.</span>字符串开头删除空白方法：xxx.lstrip<span class="hljs-comment">()</span><br><span class="hljs-number">7.</span>字符串两端删除空白方法：xxx.strip<span class="hljs-comment">()</span><br></code></pre></td></tr></table></figure><h3 id="数学计算："><a href="#数学计算：" class="headerlink" title="数学计算："></a>数学计算：</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">1.+ - * / , ** 表示^ 乘方<br>2.浮点数直接计算，相除结果都是浮点数<br></code></pre></td></tr></table></figure><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">student = [<span class="hljs-string">&#x27;zhangsan&#x27;</span>,<span class="hljs-string">&#x27;lisi&#x27;</span>,<span class="hljs-string">&#x27;wangwu&#x27;</span>,<span class="hljs-string">&#x27;zhaoliu&#x27;</span>]<br><span class="hljs-built_in">print</span>(student)<br>--------<br>结果：<br>[<span class="hljs-string">&#x27;zhangsan&#x27;</span>,<span class="hljs-string">&#x27;lisi&#x27;</span>,<span class="hljs-string">&#x27;wangwu&#x27;</span>,<span class="hljs-string">&#x27;zhaoliu&#x27;</span>]<br></code></pre></td></tr></table></figure><h3 id="访问列表元素："><a href="#访问列表元素：" class="headerlink" title="访问列表元素："></a>访问列表元素：</h3><p>1.提取student中第一个元素:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(student[<span class="hljs-number">0</span>]),结果: zhangsan<br></code></pre></td></tr></table></figure><p>配合xxx.title() 有奇效:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(student[<span class="hljs-number">0</span>].title()),结果：Zhangsan<br></code></pre></td></tr></table></figure><p>2.列表索引从0开始，最后一个代码位[-1],</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(student[-<span class="hljs-number">1</span>]) 结果：zhaoliu<br></code></pre></td></tr></table></figure><p>3.增删改：</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>PYTHON技术栈</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>PYTHON</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2021下半年目标</title>
     <link href="/2021/07/09/2021%E4%B8%8B%E5%8D%8A%E5%B9%B4%E7%9B%AE%E6%A0%87/"/>
     <url>/2021/07/09/2021%E4%B8%8B%E5%8D%8A%E5%B9%B4%E7%9B%AE%E6%A0%87/</url>
