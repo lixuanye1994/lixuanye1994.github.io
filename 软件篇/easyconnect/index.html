@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>内部VPN接入教程 | WIKI-办公IT部 | 丽人丽妆-办公it部-WIKI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#e85298">
+    
+    
+    <meta name="keywords" content="VPN">
+    <meta name="description" content="Tip: 按照公司审计部、IT部制度要求： 1.公司业务系统又称OMS系统,只允许公司内部网络登录(如：内部有线网络、LRLZ_OFFICE无线网络) 2.员工如果居家办公或在外出差时仍需要登录OMS系统,必须在公司派发的笔记本上连接内部VPN 3.如需在个人电脑或手机上使用,请向审计部同事邮件咨询申请  附：邮件申请格式：  发送邮件至-审计副总监 Jackie Jang-抄送-办公it部 &amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="内部VPN接入教程">
+<meta property="og:url" content="http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/index.html">
+<meta property="og:site_name" content="WIKI-办公IT部">
+<meta property="og:description" content="Tip: 按照公司审计部、IT部制度要求： 1.公司业务系统又称OMS系统,只允许公司内部网络登录(如：内部有线网络、LRLZ_OFFICE无线网络) 2.员工如果居家办公或在外出差时仍需要登录OMS系统,必须在公司派发的笔记本上连接内部VPN 3.如需在个人电脑或手机上使用,请向审计部同事邮件咨询申请  附：邮件申请格式：  发送邮件至-审计副总监 Jackie Jang-抄送-办公it部 &amp;">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/easyconnect/EasyConnect.png">
+<meta property="og:image" content="http://example.com/img/easyconnect/google.jpg">
+<meta property="og:image" content="http://example.com/img/easyconnect/Microsoft.jpg">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E8%BF%9E%E6%8E%A5.png">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E7%99%BB%E5%BD%95.png">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E6%8F%90%E4%BA%A4%E7%94%B3%E8%AF%B7.png">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E6%8F%90%E4%BA%A4%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E5%8A%A8%E6%80%81%E5%8F%A3%E4%BB%A4%E7%AC%AC%E4%B8%80%E6%AD%A5.png">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E5%8A%A8%E6%80%81%E5%8F%A3%E4%BB%A4%E7%AC%AC%E4%BA%8C%E6%AD%A5.png">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E6%89%8B%E6%9C%BA%E7%AB%AFapp.jpg">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E9%AA%8C%E8%AF%81%E7%A0%81.jpg">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E5%8A%A8%E6%80%81%E5%8F%A3%E4%BB%A4%E7%AC%AC%E4%B8%89%E6%AD%A5.png">
+<meta property="og:image" content="http://example.com/img/easyconnect/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F.png">
+<meta property="article:published_time" content="2024-01-26T07:14:20.000Z">
+<meta property="article:modified_time" content="2024-01-29T08:12:14.376Z">
+<meta property="article:author" content="办公IT部">
+<meta property="article:tag" content="VPN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/easyconnect/EasyConnect.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="WIKI-办公IT部" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">办公IT部</h5>
+          <a href="mailto:it@lrlz.com" title="it@lrlz.com" class="mail">it@lrlz.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                常用
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-user"></i>
+                关于
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">内部VPN接入教程</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">内部VPN接入教程</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2024-01-26T07:14:20.000Z" itemprop="datePublished" class="page-time">
+  2024-01-26
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E7%AF%87/">软件篇</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Start"><span class="post-toc-text">Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%87%86%E5%A4%87"><span class="post-toc-text">软件准备</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E9%A6%96%E6%AC%A1%E7%99%BB%E5%BD%95%E5%AE%A1%E6%A0%B8"><span class="post-toc-text">首次登录审核</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%8A%A8%E6%80%81%E5%8F%A3%E4%BB%A4%E7%BB%91%E5%AE%9A"><span class="post-toc-text">动态口令绑定</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E6%9B%B4%E6%8D%A2%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E9%87%8D%E6%96%B0%E7%BB%91%E5%AE%9A"><span class="post-toc-text">更换手机如何重新绑定</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%85%B6%E4%BB%96%E9%97%AE%E9%A2%98%EF%BC%8C%E5%BF%AB%E9%97%AE%E5%BF%AB%E7%AD%94"><span class="post-toc-text">其他问题，快问快答</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-%E7%94%B5%E8%84%91%E7%AB%AF%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81%E5%A4%B1%E8%B4%A5"><span class="post-toc-text">1.电脑端登录密码失败?</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-easyconnect%E7%99%BB%E5%BD%95%E9%94%99%E8%AF%AF%E8%BF%87%E5%A4%9A%E8%A2%AB%E9%94%81%E5%AE%9A"><span class="post-toc-text">2.easyconnect登录错误过多被锁定?</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3-easyconnect%E5%8A%A8%E6%80%81%E5%8F%A3%E4%BB%A4%E5%87%BA%E9%94%99"><span class="post-toc-text">3.easyconnect动态口令出错?</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-软件篇/easyconnect"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">内部VPN接入教程</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2024-01-26 15:14:20" datetime="2024-01-26T07:14:20.000Z"  itemprop="datePublished">2024-01-26</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E7%AF%87/">软件篇</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <blockquote>
+<p>Tip: 按照公司审计部、IT部制度要求：<br> 1.公司业务系统又称<a target="_blank" rel="noopener" href="https://ssobusenv.lrlz.com/">OMS系统</a>,只允许公司内部网络登录(如：内部有线网络、LRLZ_OFFICE无线网络)<br> 2.员工如果居家办公或在外出差时仍需要登录OMS系统,必须在公司派发的笔记本上连接内部VPN<br> 3.如需在个人电脑或手机上使用,请向审计部同事邮件咨询申请<br>  附：邮件申请格式：<br>  发送邮件至-审计副总监 Jackie Jang-抄送-办公it部 <a href="mailto:&#x69;&#116;&#64;&#x6c;&#x72;&#108;&#x7a;&#x2e;&#x63;&#x6f;&#x6d;">&#x69;&#116;&#64;&#x6c;&#x72;&#108;&#x7a;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+</blockquote>
+<span id="more"></span>
+
+<p>欢迎访问 丽人丽妆-办公it部-WIKI-内部VPN接入教程</p>
+<h3 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h3><h4 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h4><p>1.【电脑端】在公司派发的笔记本上已预装好VPN软件,EasyConnect.exe<br>2.【手机端】手机端需要安装二次验证软件：<br>安卓端手机系统比较自由-推荐使用<code>谷歌身份验证器</code>,当然也可以使用<code>微软验证</code>，可自行搜索安装包<br>ios端手机可以在<code>AppStore</code>搜索<code>微软验证</code></p>
+<table>
+    <tr>
+        <td>电脑端软件</td> 
+        <td>安卓端APP</td> 
+        <td>iOS端APP</td> 
+   </tr>
+    <tr>
+          <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/EasyConnect.png" alt="EasyConnect.exe" title="EasyConnect.exe">
+                </div>
+                <div class="image-caption">EasyConnect.exe</div>
+            </figure></td> 
+        <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/google.jpg" alt="google.apk" title="google.apk">
+                </div>
+                <div class="image-caption">google.apk</div>
+            </figure></td> 
+        <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/Microsoft.jpg" alt="Microsoft.apk" title="Microsoft.apk/ios">
+                </div>
+                <div class="image-caption">Microsoft.apk/ios</div>
+            </figure></td> 
+    </tr>
+    <tr>
+        <td>联系IT安装</td>
+        <td>下载-谷歌(需翻墙)-<a target="_blank" rel="noopener" href="https://github.com/google/google-authenticator-android/releases/download/v5.00/authenticator.apk">google-v5.00.apk</a></td>
+        <td>下载-微软(多端通用)-<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/security/mobile-authenticator-app">authenticator.apk/ios</a></td>
+    </tr>
+</table>
+
+<h4 id="首次登录审核"><a href="#首次登录审核" class="headerlink" title="首次登录审核"></a>首次登录审核</h4><p>1.打开电脑端后在地址栏输入公司服务器网址<code>https://58.246.179.50:3443</code></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/连接.png" alt="输入服务器地址" title="">
+                </div>
+                <div class="image-caption">输入服务器地址</div>
+            </figure>
+<p>2.如果遇到更新，请在更新后登录账号</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/登录.png" alt="登录账号" title="">
+                </div>
+                <div class="image-caption">登录账号</div>
+            </figure>
+<p>3.登录后提示审核，请在提交申请成功后<code>钉钉</code>搜索<code>IT</code>联系任意同事处理</p>
+<table>
+    <tr>
+        <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/提交申请.png" alt="提交申请" title="">
+                </div>
+                <div class="image-caption">提交申请</div>
+            </figure></td> 
+        <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/提交成功.png" alt="提交成功" title="">
+                </div>
+                <div class="image-caption">提交成功</div>
+            </figure></td> 
+    </tr>
+</table>
+
+<h4 id="动态口令绑定"><a href="#动态口令绑定" class="headerlink" title="动态口令绑定"></a>动态口令绑定</h4><p>1.IT同事后台审核通过后,请在电脑端重新登陆easyconnect，将会出现如下绑定提示</p>
+<table>
+    <tr>
+        <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/动态口令第一步.png" alt="动态口令绑定第一步" title="">
+                </div>
+                <div class="image-caption">动态口令绑定第一步</div>
+            </figure></td> 
+        <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/动态口令第二步.png" alt="动态口令绑定第二步" title="">
+                </div>
+                <div class="image-caption">动态口令绑定第二步</div>
+            </figure></td>
+    </tr>
+</table>
+
+
+<p>2.在动态口令绑定第二步时,请准备手机端二次验证APP,开始绑定二次验证,获取动态口令<a href="#%E8%BD%AF%E4%BB%B6%E5%87%86%E5%A4%87">返回查看</a></p>
+<table>
+    <tr>            
+        <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/手机端app.jpg" alt="手机端APP-选择扫描" title="">
+                </div>
+                <div class="image-caption">手机端APP-选择扫描</div>
+            </figure></td> 
+        <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/验证码.jpg" alt="扫描后出现动态口令码" title="">
+                </div>
+                <div class="image-caption">扫描后出现动态口令码</div>
+            </figure></td>
+        <td><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/动态口令第三步.png" alt="请在电脑端输入动态口令码" title="">
+                </div>
+                <div class="image-caption">请在电脑端输入动态口令码</div>
+            </figure></td> 
+    </tr>
+</table>
+
+<p>3.如果正常进入软件界面,恭喜您软件登录成功了！请从界面进入OMS系统，教程结束</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/easyconnect/登录成功.png" alt="登录成功" title="">
+                </div>
+                <div class="image-caption">登录成功</div>
+            </figure>
+
+<h4 id="更换手机如何重新绑定"><a href="#更换手机如何重新绑定" class="headerlink" title="更换手机如何重新绑定"></a>更换手机如何重新绑定</h4><p>1.更换手机后,请第一时间联系办公it部同事，it从后台删除绑定手机<br>2.it通知已解除后，电脑端登录后重新显示二维码，重新绑定动态口令即可<a href="#%E5%8A%A8%E6%80%81%E5%8F%A3%E4%BB%A4%E7%BB%91%E5%AE%9A">查看重新绑定</a></p>
+<h4 id="其他问题，快问快答"><a href="#其他问题，快问快答" class="headerlink" title="其他问题，快问快答"></a>其他问题，快问快答</h4><h5 id="1-电脑端登录密码失败"><a href="#1-电脑端登录密码失败" class="headerlink" title="1.电脑端登录密码失败?"></a>1.电脑端登录密码失败?</h5><blockquote>
+<p>答: easyconnect的登录密码是员工域账户密码,俗称[开机密码],此密码每三个提示强制修改，未及时更改失效无法登录</p>
+</blockquote>
+<h5 id="2-easyconnect登录错误过多被锁定"><a href="#2-easyconnect登录错误过多被锁定" class="headerlink" title="2.easyconnect登录错误过多被锁定?"></a>2.easyconnect登录错误过多被锁定?</h5><blockquote>
+<p>答： 请联系it解锁</p>
+</blockquote>
+<h5 id="3-easyconnect动态口令出错"><a href="#3-easyconnect动态口令出错" class="headerlink" title="3.easyconnect动态口令出错?"></a>3.easyconnect动态口令出错?</h5><blockquote>
+<p>答：多半是手机APP出错，请联系it解绑后<a href="#%E5%8A%A8%E6%80%81%E5%8F%A3%E4%BB%A4%E7%BB%91%E5%AE%9A">查看重新绑定</a></p>
+</blockquote>
+<ul>
+<li>End -教程结束 <a href="/hello-wiki">返回目录</a></li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2024-01-29T08:12:14.376Z" itemprop="dateUpdated">2024-01-29 16:12:14</time>
+</span><br>
+
+
+        
+        办公it部祝愿-丽人er-龙年行大运，万事如意，新春快乐！
+        
+    </div>
+    
+    <footer>
+        <a href="http://example.com">
+            <img src="/img/avatar.jpg" alt="办公IT部">
+            办公IT部
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VPN/" rel="tag">VPN</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/&title=《内部VPN接入教程》 — WIKI-办公IT部&pic=http://example.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/&title=《内部VPN接入教程》 — WIKI-办公IT部&source=
+Tip: 按照公司审计部、IT部制度要求： 1.公司业务系统又称OMS系统,只允许公司内部网络登录(如：内部有线网络、LRLZ_OFFICE无线网络) ..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《内部VPN接入教程》 — WIKI-办公IT部&url=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/&via=http://example.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/example/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">文章模板</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        感谢打赏!!!!您的认可,是对我们工作的肯定!已关闭打赏功能
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>遵循 <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>办公IT部 &copy; 2024</span>
+            <span>
+                
+                <a href="http://www.baidu.com/" target="_blank">沪ICP备2023013489号-1</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/&title=《内部VPN接入教程》 — WIKI-办公IT部&pic=http://example.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/&title=《内部VPN接入教程》 — WIKI-办公IT部&source=
+Tip: 按照公司审计部、IT部制度要求： 1.公司业务系统又称OMS系统,只允许公司内部网络登录(如：内部有线网络、LRLZ_OFFICE无线网络) ..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《内部VPN接入教程》 — WIKI-办公IT部&url=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/&via=http://example.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://example.com/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '办公it部-WIKI';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '办公it部-WIKI';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
