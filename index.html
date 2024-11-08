@@ -1,675 +1,771 @@
 <!DOCTYPE html>
 <html>
-<head>
-    
-
-    
-
-    
-
-
-
-    <meta charset="utf-8">
-    
-    
-    
-    
-    <title>WIKI-办公IT部 | 丽人丽妆-办公it部-WIKI</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="theme-color" content="#e85298">
-    
-    
-    <meta name="keywords" content="WIKI">
-    <meta name="description" content="欢迎访问丽人丽妆-办公IT部-WIKI,这里有办公it类的各种帮助">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WIKI-办公IT部">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="WIKI-办公IT部">
-<meta property="og:description" content="欢迎访问丽人丽妆-办公IT部-WIKI,这里有办公it类的各种帮助">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="办公IT部">
-<meta property="article:tag" content="WIKI">
-<meta name="twitter:card" content="summary">
-    
-        <link rel="alternate" type="application/atom+xml" title="WIKI-办公IT部" href="/atom.xml">
-    
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
-    <script>window.lazyScripts=[]</script>
-
-    <!-- custom head -->
-    
-
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-    <div id="loading" class="active"></div>
-
-    <aside id="menu"  >
-  <div class="inner flex-row-vertical">
-    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
-        <i class="icon icon-lg icon-close"></i>
-    </a>
-    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
-      <div class="brand">
-        <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/img/avatar.jpg">
-        </a>
-        <hgroup class="introduce">
-          <h5 class="nickname">办公IT部</h5>
-          <a href="mailto:it@lrlz.com" title="it@lrlz.com" class="mail">it@lrlz.com</a>
-        </hgroup>
-      </div>
-    </div>
-    <div class="scroll-wrap flex-col">
-      <ul class="nav">
-        
-            <li class="waves-block waves-effect active">
-              <a href="/"  >
-                <i class="icon icon-lg icon-home"></i>
-                主页
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/hello-wiki"  >
-                <i class="icon icon-lg icon-book"></i>
-                目录
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/categories"  >
-                <i class="icon icon-lg icon-th-list"></i>
-                分类
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/tags"  >
-                <i class="icon icon-lg icon-tags"></i>
-                常用
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/about"  >
-                <i class="icon icon-lg icon-user"></i>
-                关于
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a target="_blank" rel="noopener" href="https://github.com/lixuanye1994/lixuanye1994.github.io"  >
-                <i class="icon icon-lg icon-github"></i>
-                github
-              </a>
-            </li>
-        
-      </ul>
-    </div>
-  </div>
-</aside>
-
-    <main id="main">
-        <header class="top-header" id="header">
-    <div class="flex-row">
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
-          <i class="icon icon-lg icon-navicon"></i>
-        </a>
-        <div class="flex-col header-title ellipsis">WIKI-办公IT部</div>
-        
-        <div class="search-wrap" id="search-wrap">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
-                <i class="icon icon-lg icon-chevron-left"></i>
-            </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
-                <i class="icon icon-lg icon-search"></i>
-            </a>
-        </div>
-        
-        
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
-            <i class="icon icon-lg icon-share-alt"></i>
-        </a>
-        
-    </div>
-</header>
-<header class="content-header index-header">
-
-    <div class="container fade-scale">
-        <h1 class="title">WIKI-办公IT部</h1>
-        <h5 class="subtitle">
-            
-                丽人丽妆-办公it部-WIKI
-            
-        </h5>
+  <head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <!-- <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script> -->
+    <script src="echarts.js"></script>
+  </head>
+  <body>
+    <!-- Login Form -->
+    <div id="login-form">
+        <h3>Login</h3>
+        <input type="text" id="username" placeholder="姓名" />
+        <input type="password" id="password" placeholder="身份证号" />
+        <button onclick="login()">查看</button>
+        <p id="error-msg" style="color: red;"></p>
     </div>
 
-    
-
-
-</header>
-
-<div class="container body-wrap">
-
-    <ul class="post-list">
-    
-        <li class="post-list-item fade">
-            <article id="post-网络篇/network-error"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2024-01-31 09:22:52" datetime="2024-01-31T01:22:52.000Z"  itemprop="datePublished">2024-01-31</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%BD%91%E7%BB%9C%E7%AF%87/">网络篇</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/%E7%BD%91%E7%BB%9C%E7%AF%87/network-error/">网络故障</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        欢迎访问 丽人丽妆 - 办公it部 - WIKI - 网络故障
-    
-
-        <a href="/%E7%BD%91%E7%BB%9C%E7%AF%87/network-error/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-网络篇/use-internet"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2024-01-30 16:08:56" datetime="2024-01-30T08:08:56.000Z"  itemprop="datePublished">2024-01-30</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%BD%91%E7%BB%9C%E7%AF%87/">网络篇</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/%E7%BD%91%E7%BB%9C%E7%AF%87/use-internet/">上网指南</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        欢迎访问 丽人丽妆 - 办公it部 - WIKI - 上网指南
-    
-
-        <a href="/%E7%BD%91%E7%BB%9C%E7%AF%87/use-internet/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-硬件篇/printer-scanner"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2024-01-29 16:56:34" datetime="2024-01-29T08:56:34.000Z"  itemprop="datePublished">2024-01-29</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%A1%AC%E4%BB%B6%E7%AF%87/">硬件篇</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/%E7%A1%AC%E4%BB%B6%E7%AF%87/printer-scanner/">打印机扫描使用通用教程</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        欢迎访问 丽人丽妆 - 办公it部 - WIKI - 打印机扫描使用通用教程
-    
-
-        <a href="/%E7%A1%AC%E4%BB%B6%E7%AF%87/printer-scanner/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B8%B8%E7%94%A8/" rel="tag">常用</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-硬件篇/printer"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2024-01-29 16:56:34" datetime="2024-01-29T08:56:34.000Z"  itemprop="datePublished">2024-01-29</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%A1%AC%E4%BB%B6%E7%AF%87/">硬件篇</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/%E7%A1%AC%E4%BB%B6%E7%AF%87/printer/">公用打印机安装与使用</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        欢迎访问 丽人丽妆-办公it部-WIKI-公用打印机安装与使用
-    
-
-        <a href="/%E7%A1%AC%E4%BB%B6%E7%AF%87/printer/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B8%B8%E7%94%A8/" rel="tag">常用</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-软件篇/easyconnect"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2024-01-26 15:14:20" datetime="2024-01-26T07:14:20.000Z"  itemprop="datePublished">2024-01-26</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E7%AF%87/">软件篇</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/">内部VPN接入教程</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        欢迎访问 丽人丽妆 - 办公it部 - WIKI - 内部VPN接入教程
-    
-
-        <a href="/%E8%BD%AF%E4%BB%B6%E7%AF%87/easyconnect/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VPN/" rel="tag">VPN</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-example"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2024-01-26 13:40:58" datetime="2024-01-26T05:40:58.000Z"  itemprop="datePublished">2024-01-26</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/example/">文章模板</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        欢迎访问 丽人丽妆 - 办公it部 - WIKI - 文章模板
-
-在这里,我们将展示在日常工作中,遇到关于电脑、网络等问题的解决办法。以下为即将实现的文章目录：
-
-    
-
-        <a href="/example/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-入职篇/lidao"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2024-01-26 13:40:58" datetime="2024-01-26T05:40:58.000Z"  itemprop="datePublished">2024-01-26</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%85%A5%E8%81%8C%E7%AF%87/">入职篇</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/%E5%85%A5%E8%81%8C%E7%AF%87/lidao/">&lt;&lt;丽道&gt;&gt;解读</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        欢迎访问 丽人丽妆 - 办公it部-WIKI - &lt;&lt;丽道&gt;&gt;解读
-
-在本篇教程中，将解读&lt;&lt;丽道&gt;&gt; 办公期间遇到的账号、网络等问题进行详细说明
-
-    
-
-        <a href="/%E5%85%A5%E8%81%8C%E7%AF%87/lidao/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-hello-wiki"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2024-01-25 16:03:59" datetime="2024-01-25T08:03:59.000Z"  itemprop="datePublished">2024-01-25</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/All-%E7%9B%AE%E5%BD%95/">All 目录</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/hello-wiki/">Hello Wiki</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        欢迎访问 丽人丽妆 - 办公it部-WIKI - 目录在这里,我们将展示在日常工作中,遇到关于电脑、网络等问题的解决办法。以下为即将实现的文章目录：
-    
-
-        <a href="/hello-wiki/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-    </ul>
-
-    
-
-</div>
-
-        <footer class="footer">
-    <div class="top">
-        
-<p>
-    <span id="busuanzi_container_site_uv" style='display:none'>
-        站点总访客数：<span id="busuanzi_value_site_uv"></span>
-    </span>
-    <span id="busuanzi_container_site_pv" style='display:none'>
-        站点总访问量：<span id="busuanzi_value_site_pv"></span>
-    </span>
-</p>
-
-
-        <p>
-            
-                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
-            
-            <span>遵循 <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
-        </p>
-    </div>
-    <div class="bottom">
-        <p><span>办公IT部 &copy; 2024</span>
-            <span>
+    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+    <div id="main" style="width: 100%; max-width: 800px; height: 400px;"></div>
+    <script>
+        const data = [
+            {
+                "课程": "文艺作品中的人物心理成长赏析",
+                "username": "胡悦",
+                "课程内容": 4.9565217391,
+                "课堂氛围": 4.9565217391,
+                "授课方式": 4.9565217391,
+                "总体评价": 5,
+                "password": "310104197805042829"
+            },
+            {
+                "课程": "其他",
+                "username": null,
+                "课程内容": 4.9545454545,
+                "课堂氛围": 4.9545454545,
+                "授课方式": 4.9545454545,
+                "总体评价": 4.9545454545,
+                "password": null
+            },
+            {
+                "课程": "英语剧本杀",
+                "username": "朱嘉欣",
+                "课程内容": 4.8837209302,
+                "课堂氛围": 4.9302325581,
+                "授课方式": 4.9534883721,
+                "总体评价": 4.9302325581,
+                "password": "321182199912010524"
+            },
+            {
+                "课程": "快乐篮球朱文博",
+                "username": "朱文博",
+                "课程内容": 4.8863636364,
+                "课堂氛围": 4.9090909091,
+                "授课方式": 4.8409090909,
+                "总体评价": 4.9090909091,
+                "password": "371202199809290858"
+            },
+            {
+                "课程": "青春排球李澳杰",
+                "username": "李澳杰",
+                "课程内容": 4.8837209302,
+                "课堂氛围": 4.8604651163,
+                "授课方式": 4.8604651163,
+                "总体评价": 4.8604651163,
+                "password": "370283199912250616"
+            },
+            {
+                "课程": "几何里的艺术",
+                "username": "宋依菲",
+                "课程内容": 4.8205128205,
+                "课堂氛围": 4.8205128205,
+                "授课方式": 4.8461538462,
+                "总体评价": 4.8461538462,
+                "password": "310116200103065428"
+            },
+            {
+                "课程": "快乐篮球朱文博",
+                "username": "朱文博",
+                "课程内容": 4.8888888889,
+                "课堂氛围": 4.8222222222,
+                "授课方式": 4.8,
+                "总体评价": 4.8444444444,
+                "password": "371202199809290858"
+            },
+            {
+                "课程": "我是发明家",
+                "username": "徐俊杰",
+                "课程内容": 4.8421052632,
+                "课堂氛围": 4.8421052632,
+                "授课方式": 4.8157894737,
+                "总体评价": 4.8157894737,
+                "password": "310104199411196015"
+            },
+            {
+                "课程": "石头彩绘",
+                "username": "李育",
+                "课程内容": 4.7727272727,
+                "课堂氛围": 4.7727272727,
+                "授课方式": 4.75,
+                "总体评价": 4.7954545455,
+                "password": "310113197408302128"
+            },
+            {
+                "课程": "阳光足球张豪杰",
+                "username": "张豪杰",
+                "课程内容": 4.7931034483,
+                "课堂氛围": 4.7816091954,
+                "授课方式": 4.7356321839,
+                "总体评价": 4.7816091954,
+                "password": "41162719900814641X"
+            },
+            {
+                "课程": "精英乒乓",
+                "username": "崔星晨",
+                "课程内容": 4.725,
+                "课堂氛围": 4.65,
+                "授课方式": 4.7,
+                "总体评价": 4.775,
+                "password": "371625200101210025"
+            },
+            {
+                "课程": "合唱",
+                "username": "陈思羽",
+                "课程内容": 4.7209302326,
+                "课堂氛围": 4.6744186047,
+                "授课方式": 4.6976744186,
+                "总体评价": 4.7674418605,
+                "password": "320982199906285284"
+            },
+            {
+                "课程": "妙笔生花----篆刻",
+                "username": "穆劲杰",
+                "课程内容": 4.7659574468,
+                "课堂氛围": 4.8085106383,
+                "授课方式": 4.7446808511,
+                "总体评价": 4.7659574468,
+                "password": "360102200008014316"
+            },
+            {
+                "课程": "跃动跳踢",
+                "username": "汤仲娟",
+                "课程内容": 4.7142857143,
+                "课堂氛围": 4.7619047619,
+                "授课方式": 4.7142857143,
+                "总体评价": 4.7619047619,
+                "password": "310228197712052629"
+            },
+            {
+                "课程": "用英语讲中国景点",
+                "username": "嵇欣儿",
+                "课程内容": 4.7608695652,
+                "课堂氛围": 4.7391304348,
+                "授课方式": 4.7391304348,
+                "总体评价": 4.7608695652,
+                "password": "330521200009143529"
+            },
+            {
+                "课程": "青少年编程",
+                "username": "陆春琛",
+                "课程内容": 4.8048780488,
+                "课堂氛围": 4.7317073171,
+                "授课方式": 4.7073170732,
+                "总体评价": 4.756097561,
+                "password": "320626197703299620"
+            },
+            {
+                "课程": "活力羽毛球朱梦龙",
+                "username": "朱梦龙",
+                "课程内容": 4.8,
+                "课堂氛围": 4.8,
+                "授课方式": 4.7,
+                "总体评价": 4.7555555556,
+                "password": "320481199606055475"
+            },
+            {
+                "课程": "鱼跃中庭---智创校园生态鱼池",
+                "username": null,
+                "课程内容": 4.7674418605,
+                "课堂氛围": 4.6976744186,
+                "授课方式": 4.7441860465,
+                "总体评价": 4.7441860465,
+                "password": null
+            },
+            {
+                "课程": "西游记桌游",
+                "username": "徐妍",
+                "课程内容": 4.725,
+                "课堂氛围": 4.75,
+                "授课方式": 4.7,
+                "总体评价": 4.725,
+                "password": "310104198710110045"
+            },
+            {
+                "课程": "青春排球李澳杰",
+                "username": "李澳杰",
+                "课程内容": 4.6904761905,
+                "课堂氛围": 4.6666666667,
+                "授课方式": 4.619047619,
+                "总体评价": 4.7142857143,
+                "password": "370283199912250616"
+            },
+            {
+                "课程": "国际跳棋B",
+                "username": "封老师",
+                "课程内容": 4.7916666667,
+                "课堂氛围": 4.75,
+                "授课方式": 4.7916666667,
+                "总体评价": 4.7083333333,
+                "password": null
+            },
+            {
+                "课程": "快乐篮球钱德筑",
+                "username": "钱德筑",
+                "课程内容": 4.6818181818,
+                "课堂氛围": 4.7272727273,
+                "授课方式": 4.7045454545,
+                "总体评价": 4.7045454545,
+                "password": "370125198106286311"
+            },
+            {
+                "课程": "从函数到桥梁建造的探险",
+                "username": "仇彧",
+                "课程内容": 4.7441860465,
+                "课堂氛围": 4.6976744186,
+                "授课方式": 4.6511627907,
+                "总体评价": 4.6976744186,
+                "password": "310107199810231323"
+            },
+            {
+                "课程": "活力羽毛球江敏玮",
+                "username": "江敏玮",
+                "课程内容": 4.630952381,
+                "课堂氛围": 4.6904761905,
+                "授课方式": 4.630952381,
+                "总体评价": 4.6904761905,
+                "password": "310101198611041567"
+            },
+            {
+                "课程": "古籍修复",
+                "username": "黄梦娜",
+                "课程内容": 4.625,
+                "课堂氛围": 4.725,
+                "授课方式": 4.575,
+                "总体评价": 4.675,
+                "password": "320483199409250223"
+            },
+            {
+                "课程": "纸鸢探秘：从匠心绘制到天际翱翔艺术",
+                "username": "杜悦",
+                "课程内容": 4.7317073171,
+                "课堂氛围": 4.5365853659,
+                "授课方式": 4.4634146341,
+                "总体评价": 4.6585365854,
+                "password": "210902200006256021"
+            },
+            {
+                "课程": "顾绣传习班",
+                "username": "王老师",
+                "课程内容": 4.8,
+                "课堂氛围": 4.7428571429,
+                "授课方式": 4.6285714286,
+                "总体评价": 4.6571428571,
+                "password": null
+            },
+            {
+                "课程": "剧说党史",
+                "username": "周思祺",
+                "课程内容": 4.5454545455,
+                "课堂氛围": 4.5757575758,
+                "授课方式": 4.5757575758,
+                "总体评价": 4.6363636364,
+                "password": "330523199508233921"
+            },
+            {
+                "课程": "精英乒乓",
+                "username": "崔星晨",
+                "课程内容": 4.7674418605,
+                "课堂氛围": 4.7674418605,
+                "授课方式": 4.7209302326,
+                "总体评价": 4.6279069767,
+                "password": "371625200101210025"
+            },
+            {
+                "课程": "国际跳棋B",
+                "username": "封老师",
+                "课程内容": 4.5609756098,
+                "课堂氛围": 4.4634146341,
+                "授课方式": 4.5853658537,
+                "总体评价": 4.6097560976,
+                "password": null
+            },
+            {
+                "课程": "合唱",
+                "username": "陈思羽",
+                "课程内容": 4.7209302326,
+                "课堂氛围": 4.7674418605,
+                "授课方式": 4.5813953488,
+                "总体评价": 4.6046511628,
+                "password": "320982199906285284"
+            },
+            {
+                "课程": "史记课本剧",
+                "username": "丁宁",
+                "课程内容": 4.6279069767,
+                "课堂氛围": 4.6744186047,
+                "授课方式": 4.6046511628,
+                "总体评价": 4.6046511628,
+                "password": "31011019990915002X"
+            },
+            {
+                "课程": "五子棋",
+                "username": "姚老师",
+                "课程内容": 4.5853658537,
+                "课堂氛围": 4.5853658537,
+                "授课方式": 4.5975609756,
+                "总体评价": 4.5975609756,
+                "password": null
+            },
+            {
+                "课程": "阳光足球王鑫",
+                "username": "王鑫",
+                "课程内容": 4.5588235294,
+                "课堂氛围": 4.6176470588,
+                "授课方式": 4.5882352941,
+                "总体评价": 4.5882352941,
+                "password": "362330198603302978"
+            },
+            {
+                "课程": "“醉醒诗仙，浪漫李白”吟诵课",
+                "username": "陈旭峰",
+                "课程内容": 4.5833333333,
+                "课堂氛围": 4.625,
+                "授课方式": 4.3333333333,
+                "总体评价": 4.5833333333,
+                "password": "310114199410200417"
+            },
+            {
+                "课程": "青春排球向代妮",
+                "username": "向代妮",
+                "课程内容": 4.6511627907,
+                "课堂氛围": 4.6511627907,
+                "授课方式": 4.511627907,
+                "总体评价": 4.5813953488,
+                "password": "511527199606120023"
+            },
+            {
+                "课程": "国际跳棋A",
+                "username": "张老师",
+                "课程内容": 4.5789473684,
+                "课堂氛围": 4.5263157895,
+                "授课方式": 4.5526315789,
+                "总体评价": 4.5789473684,
+                "password": null
+            },
+            {
+                "课程": "实验数学",
+                "username": "赵璞",
+                "课程内容": 4.487804878,
+                "课堂氛围": 4.4634146341,
+                "授课方式": 4.4390243902,
+                "总体评价": 4.5609756098,
+                "password": "310104198910207263"
+            },
+            {
+                "课程": "盘扣基础习作",
+                "username": "朱鹂",
+                "课程内容": 4.6315789474,
+                "课堂氛围": 4.5263157895,
+                "授课方式": 4.4473684211,
+                "总体评价": 4.5526315789,
+                "password": "310103198607015086"
+            },
+            {
+                "课程": "有声日历",
+                "username": "赵仪",
+                "课程内容": 4.3170731707,
+                "课堂氛围": 4.4146341463,
+                "授课方式": 4.512195122,
+                "总体评价": 4.5365853659,
+                "password": "310228199501200029"
+            },
+            {
+                "课程": "立体创想家：积木与空间思维探索",
+                "username": "陈菊平",
+                "课程内容": 4.525,
+                "课堂氛围": 4.525,
+                "授课方式": 4.425,
+                "总体评价": 4.525,
+                "password": "310230197512244986"
+            },
+            {
+                "课程": "上海citywalk探索之旅",
+                "username": "张思琦",
+                "课程内容": 4.6756756757,
+                "课堂氛围": 4.7027027027,
+                "授课方式": 4.7297297297,
+                "总体评价": 4.5135135135,
+                "password": "320105199709301621"
+            },
+            {
+                "课程": "“中国”文创",
+                "username": "毕晨",
+                "课程内容": 4.5348837209,
+                "课堂氛围": 4.5581395349,
+                "授课方式": 4.488372093,
+                "总体评价": 4.511627907,
+                "password": "220104199608315020"
+            },
+            {
+                "课程": "面塑",
+                "username": "徐玉琳",
+                "课程内容": 4.5348837209,
+                "课堂氛围": 4.5813953488,
+                "授课方式": 4.4186046512,
+                "总体评价": 4.511627907,
+                "password": "310104197809072822"
+            },
+            {
+                "课程": "布条线编织",
+                "username": "史卫珍",
+                "课程内容": 4.380952381,
+                "课堂氛围": 4.380952381,
+                "授课方式": 4.4047619048,
+                "总体评价": 4.5,
+                "password": "310104197508200827"
+            },
+            {
+                "课程": "敦煌文化小故事",
+                "username": "毕仕旻",
+                "课程内容": 4.5517241379,
+                "课堂氛围": 4.4137931034,
+                "授课方式": 4.4482758621,
+                "总体评价": 4.4827586207,
+                "password": "310105199509041210"
+            },
+            {
+                "课程": "3D画图",
+                "username": "陈砚琪",
+                "课程内容": 4.4545454545,
+                "课堂氛围": 4.2045454545,
+                "授课方式": 4.2045454545,
+                "总体评价": 4.4545454545,
+                "password": "310229199506160026"
+            },
+            {
+                "课程": "其他",
+                "username": null,
+                "课程内容": 4.0384615385,
+                "课堂氛围": 3.7538461538,
+                "授课方式": 3.6461538462,
+                "总体评价": 4.4538461538,
+                "password": null
+            },
+            {
+                "课程": "中华武术",
+                "username": "于心",
+                "课程内容": 4.4716981132,
+                "课堂氛围": 4.5283018868,
+                "授课方式": 4.5094339623,
+                "总体评价": 4.4528301887,
+                "password": "310226200102250013"
+            },
+            {
+                "课程": "摄影艺术",
+                "username": "王渊敏",
+                "课程内容": 4.5476190476,
+                "课堂氛围": 4.3333333333,
+                "授课方式": 4.380952381,
+                "总体评价": 4.4523809524,
+                "password": "310228197512055817"
+            },
+            {
+                "课程": "绒绣",
+                "username": "魏彦羽",
+                "课程内容": 4.6,
+                "课堂氛围": 4.4,
+                "授课方式": 4.275,
+                "总体评价": 4.45,
+                "password": "140321199211021523"
+            },
+            {
+                "课程": "墨韵书法",
+                "username": "袁老师",
+                "课程内容": 4.4761904762,
+                "课堂氛围": 4.3571428571,
+                "授课方式": 4.3333333333,
+                "总体评价": 4.4285714286,
+                "password": null
+            },
+            {
+                "课程": "英语推理剧本赏析",
+                "username": "余佳燕",
+                "课程内容": 4.4523809524,
+                "课堂氛围": 4.4761904762,
+                "授课方式": 4.5,
+                "总体评价": 4.4285714286,
+                "password": "350602200003073523"
+            },
+            {
+                "课程": "魔方",
+                "username": "赵智卉",
+                "课程内容": 4.4130434783,
+                "课堂氛围": 4.347826087,
+                "授课方式": 4.3695652174,
+                "总体评价": 4.4130434783,
+                "password": "310104199211304843"
+            },
+            {
+                "课程": "创意串串珠",
+                "username": "王子安",
+                "课程内容": 4.4090909091,
+                "课堂氛围": 4.5,
+                "授课方式": 4.3636363636,
+                "总体评价": 4.4090909091,
+                "password": "340102200107190522"
+            },
+            {
+                "课程": "动漫人物设计",
+                "username": "华晔",
+                "课程内容": 4.4318181818,
+                "课堂氛围": 4.2272727273,
+                "授课方式": 4.3863636364,
+                "总体评价": 4.3636363636,
+                "password": "310109199501142020"
+            },
+            {
+                "课程": "中国古典舞",
+                "username": "王靓靓",
+                "课程内容": 4.2903225806,
+                "课堂氛围": 4.4516129032,
+                "授课方式": 4.3548387097,
+                "总体评价": 4.3548387097,
+                "password": "310225199203075267"
+            },
+            {
+                "课程": "数独------九九归真",
+                "username": "屠依凡",
+                "课程内容": 4.3720930233,
+                "课堂氛围": 4.3488372093,
+                "授课方式": 4.1627906977,
+                "总体评价": 4.3488372093,
+                "password": "310228199610265032"
+            },
+            {
+                "课程": "人工智能STEM中级",
+                "username": "外请老师",
+                "课程内容": 4.3255813953,
+                "课堂氛围": 4.2790697674,
+                "授课方式": 4.3720930233,
+                "总体评价": 4.3488372093,
+                "password": null
+            },
+            {
+                "课程": "国际跳棋A",
+                "username": "张老师",
+                "课程内容": 4.358974359,
+                "课堂氛围": 4.4615384615,
+                "授课方式": 4.4102564103,
+                "总体评价": 4.3333333333,
+                "password": null
+            },
+            {
+                "课程": "皮影",
+                "username": "徐春凤",
+                "课程内容": 4.4761904762,
+                "课堂氛围": 4.4047619048,
+                "授课方式": 4.3095238095,
+                "总体评价": 4.3333333333,
+                "password": "320681198401138222"
+            },
+            {
+                "课程": "密码学",
+                "username": "单若馨",
+                "课程内容": 4.3913043478,
+                "课堂氛围": 4.3260869565,
+                "授课方式": 4.3043478261,
+                "总体评价": 4.3043478261,
+                "password": "620104200206140520"
+            },
+            {
+                "课程": "论语中的汉字",
+                "username": "沈老师",
+                "课程内容": 4.3333333333,
+                "课堂氛围": 4.4166666667,
+                "授课方式": 4.3888888889,
+                "总体评价": 4.2777777778,
+                "password": null
+            },
+            {
+                "课程": "快乐篮球翁锦",
+                "username": "翁锦",
+                "课程内容": 4.275,
+                "课堂氛围": 4.275,
+                "授课方式": 4.225,
+                "总体评价": 4.275,
+                "password": "310230197308181711"
+            },
+            {
+                "课程": "中国结",
+                "username": "徐老师",
+                "课程内容": 4.4761904762,
+                "课堂氛围": 4.2380952381,
+                "授课方式": 4.1666666667,
+                "总体评价": 4.2619047619,
+                "password": null
+            },
+            {
+                "课程": "人工智能STEM初级",
+                "username": "外请",
+                "课程内容": 4.1818181818,
+                "课堂氛围": 4.1590909091,
+                "授课方式": 4.0227272727,
+                "总体评价": 4.25,
+                "password": null
+            },
+            {
+                "课程": "阳光足球髙研歌",
+                "username": "高研歌",
+                "课程内容": 4.25,
+                "课堂氛围": 4.15,
+                "授课方式": 4.1,
+                "总体评价": 4.25,
+                "password": "412721199903164268"
+            },
+            {
+                "课程": "中国象棋",
+                "username": "赵老师",
+                "课程内容": 4.2972972973,
+                "课堂氛围": 4.1891891892,
+                "授课方式": 4.0810810811,
+                "总体评价": 4.2162162162,
+                "password": null
+            },
+            {
+                "课程": "舞动健身",
+                "username": "吴倩",
+                "课程内容": 4.0322580645,
+                "课堂氛围": 4.1612903226,
+                "授课方式": 4,
+                "总体评价": 4.1290322581,
+                "password": "310225197807025448"
+            },
+            {
+                "课程": "五子棋",
+                "username": "姚老师",
+                "课程内容": 4.15,
+                "课堂氛围": 4.1625,
+                "授课方式": 4,
+                "总体评价": 4.125,
+                "password": null
+            },
+            {
+                "课程": "北斗卫星校园地图",
+                "username": "龚淑璇",
+                "课程内容": 4.2857142857,
+                "课堂氛围": 3.8095238095,
+                "授课方式": 4.0476190476,
+                "总体评价": 4.119047619,
+                "password": "310112200010272123"
+            },
+            {
+                "课程": "写作中的流行歌词",
+                "username": "廖亚婕",
+                "课程内容": 4.4,
+                "课堂氛围": 4.12,
+                "授课方式": 4.08,
+                "总体评价": 4.08,
+                "password": "350429199812064524"
+            },
+            {
+                "课程": "古建奇谈--读懂中国传统民居",
+                "username": "王洁",
+                "课程内容": 4,
+                "课堂氛围": 3.9166666667,
+                "授课方式": 3.75,
+                "总体评价": 4,
+                "password": "310225197503212420"
+            },
+            {
+                "课程": "探索魔都标志，为班级添新标",
+                "username": "张娇",
+                "课程内容": 4.0588235294,
+                "课堂氛围": 3.9411764706,
+                "授课方式": 3.9411764706,
+                "总体评价": 4,
+                "password": "620102198209147223"
+            },
+            {
+                "课程": "旅游路线与攻略设计",
+                "username": "蒋雪燕",
+                "课程内容": 3.9,
+                "课堂氛围": 3.85,
+                "授课方式": 3.825,
+                "总体评价": 3.9,
+                "password": "310103198401234021"
+            },
+            {
+                "课程": "再现文物",
+                "username": "戴好好",
+                "课程内容": 3.5853658537,
+                "课堂氛围": 3.3658536585,
+                "授课方式": 3.3170731707,
+                "总体评价": 3.4634146341,
+                "password": "330282200107198669"
+            },
+            {
+                "课程": "中国象棋",
+                "username": "赵老师",
+                "课程内容": 3.65,
+                "课堂氛围": 3.375,
+                "授课方式": 3.2,
+                "总体评价": 3.45,
+                "password": null
+            }
+        ]
+
+
+        // Login function to authenticate user
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const userData = data.find(user => user.username === username && user.password === password);
+
+            if (userData) {
+                // Hide login form and show chart
+                document.getElementById('login-form').style.display = 'none';
+                document.getElementById('main').style.display = 'block';
                 
-                <a href="http://www.baidu.com/" target="_blank">沪ICP备2023013489号-1</a><br>
-                
-                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
-            </span>
-        </p>
-    </div>
-</footer>
-
-    </main>
-    <div class="mask" id="mask"></div>
-<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
-
-
-
-<div class="global-share" id="globalShare">
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/&title=WIKI-办公IT部&pic=http://example.com/img/avatar.jpg" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/&title=WIKI-办公IT部&source=欢迎访问丽人丽妆-办公IT部-WIKI,这里有办公it类的各种帮助" data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/" data-title=" Facebook">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=WIKI-办公IT部&url=http://example.com/&via=http://example.com" data-title=" Twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://example.com/" data-title=" Google+">
-          <i class="icon icon-google-plus"></i>
-        </a>
-      </li>
-    </ul>
- </div>
-
-
-<div class="page-modal wx-share" id="wxShare">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://example.com/" alt="微信分享二维码">
-</div>
-
-
-
-
-    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
-<script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
-
-
-</script>
-
-<script src="/js/main.js?v=1.7.2"></script>
-
-
-<div class="search-panel" id="search-panel">
-    <ul class="search-result" id="search-result"></ul>
-</div>
-<template id="search-tpl">
-<li class="item">
-    <a href="{path}" class="waves-block waves-effect">
-        <div class="title ellipsis" title="{title}">{title}</div>
-        <div class="flex-row flex-middle">
-            <div class="tags ellipsis">
-                {tags}
-            </div>
-            <time class="flex-col time">{date}</time>
-        </div>
-    </a>
-</li>
-</template>
-
-<script src="/js/search.js?v=1.7.2" async></script>
-
-
-
-
-
-
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-<script>
-(function() {
-    var OriginTitile = document.title, titleTime;
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden) {
-            document.title = '办公it部-WIKI';
-            clearTimeout(titleTime);
-        } else {
-            document.title = '办公it部-WIKI';
-            titleTime = setTimeout(function() {
-                document.title = OriginTitile;
-            },2000);
+                // Load chart data
+                loadChart(userData);
+            } else {
+                document.getElementById('error-msg').textContent = '用户名或者密码可能不对';
+            }
         }
-    });
-})();
-</script>
+            
 
 
+        // Function to load chart data based on authenticated user data
+        function loadChart(userData) {
+            const myChart = echarts.init(document.getElementById('main'));
 
-</body>
+            const option = {
+                title: { text: '课程满意度', subtext: '数据来自问卷星' },
+                tooltip: { trigger: 'axis' },
+                legend: { data: ['课程内容', '课堂氛围', '授课方式', '总体评价'] },
+                toolbox: {
+                    show: true,
+                    feature: {
+                        dataView: { show: true, readOnly: false },
+                        saveAsImage: { show: true }
+                    }
+                },
+                xAxis: [{ type: 'value', boundaryGap: [0, 0.01] }],
+                yAxis: [{ type: 'category', data: [userData.username] }],
+                series: [
+                    { name: '课程内容', type: 'bar', data: [userData.课程内容] },
+                    { name: '课堂氛围', type: 'bar', data: [userData.课堂氛围] },
+                    { name: '授课方式', type: 'bar', data: [userData.授课方式] },
+                    { name: '总体评价', type: 'bar', data: [userData.总体评价] }
+                ]
+            };
+
+            myChart.setOption(option);
+        }
+ 
+    </script>
+   
+  </body>
 </html>
